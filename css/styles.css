@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Futura';
-    src: url('/assets/fonts/FuturaCyrillicMedium.ttf') format('truetype');
+    src: url('../assets/fonts/FuturaCyrillicMedium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Caprasimo';
-    src: url('/assets/fonts/Caprasimo-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Caprasimo-Regular.ttf') format('truetype');
 }
 
 body {
