@@ -1,9 +1,43 @@
-p {
-    color: #ff0000;
-    font-size: 24px;
+@font-face {
+    font-family: 'Futura';
+    src: url('/assets/fonts/FuturaCyrillicMedium.ttf') format('truetype');
 }
 
-h1 {
-    color: #00ff00;
-    font-size: 72px;
+@font-face {
+    font-family: 'Caprasimo';
+    src: url('/assets/fonts/Caprasimo-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #f8ffe8;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #527cc6;
+    padding: 14px 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f8ffe8;
+    font-family: 'Caprasimo';
+    font-size: 17px;
+    padding: 10px 16px;
+    margin-left: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #0b2545;
+}
+
+p {
+    font-family: 'Futura';
+    color: #0d1824;
+    font-size: 24px;
 }
