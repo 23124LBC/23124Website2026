@@ -17,11 +17,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #527cc6;
     padding: 14px 40px;
 }
 
 .menu a {
+    background-color: #527cc6;
     text-decoration: none;
     color: #f8ffe8;
     font-family: 'Caprasimo';
