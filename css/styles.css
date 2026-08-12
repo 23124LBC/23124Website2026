@@ -58,3 +58,50 @@ p {
     margin-left: 48px;
     z-index: 10;
 }
+
+/* c#0d1824its to geeksforgeeks for the scrolling img gallery code
+https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizontal-scrollbar-using-css/ */
+
+.gallerybox {
+    overflow-x: auto;
+    width: 65vw;
+    margin-left: 17.5vw;
+}
+
+.imgbox p {
+    width: 350px;
+    height: 350px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+    border: transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #f8ffe8;
+    font-family: 'Caprasimo';
+    background-color: #527cc6;
+    -webkit-text-stroke: 8px #0d1824;
+    paint-order: stroke fill;
+    font-size: 32px;
+}
+
+.imgbox img {
+    width: 350px;
+    height: 350px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #f8ffe8;
+}
+
+.imgbox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.gallerytitle {
+    font-family: 'Caprasimo';
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
