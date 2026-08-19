@@ -50,6 +50,12 @@ p {
     font-size: 24px;
 }
 
+h1 {
+    font-family: 'Caprasimo';
+    color: #0d1824;
+    font-size: 36px;
+}
+
 .slogan p {
     font-family: 'Caprasimo';
     color: #f8ffe8;
@@ -84,6 +90,7 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
     -webkit-text-stroke: 8px #0d1824;
     paint-order: stroke fill;
     font-size: 32px;
+    transition: 0.3s;
 }
 
 .imgbox img {
@@ -93,15 +100,16 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
     border-radius: 20px;
     border: transparent;
     background-color: #f8ffe8;
+    transition: 0.3s;
 }
 
 .imgbox img:hover {
-    box-shadow: 3px 3px 5px #0d1824;
+    box-shadow: 6px 6px 10px #0d1824;
     transition: 0.3s;
 }
 
 .imgbox p:hover {
-    box-shadow: 3px 3px 5px #0d1824;
+    box-shadow: 6px 6px 10px #0d1824;
     transition: 0.3s;
 }
 
@@ -122,10 +130,11 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
     margin-left: 17.5%;
     margin-top: 50px;
     background-color: #0b2545;
+    transition: 0.3s;
 }
 
 .linksection:hover {
-    box-shadow: 3px 3px 5px #0d1824;
+    box-shadow: 6px 6px 10px #0d1824;
     transition: 0.3s;
 }
 
@@ -146,4 +155,41 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
     object-fit: cover;
 }
 
+.aboutbox {
+    margin-left: 15%;
+    width: 70%;
+    
+}
 
+.aboutbox .textbox {
+    float: left;
+    width: 50%;
+    padding-top: 75px;
+}
+
+.aboutbox img {
+    float: left;
+    width: 50%;
+    object-fit: cover;
+    padding-top: 75px;
+}
+
+.contactbox {
+    margin-left: 15%;
+    width: 70%;
+    
+}
+
+.contactbox .textbox {
+    float: left;
+    width: 40%;
+    padding-top: 75px;
+    margin-left: 5%;
+}
+
+.contactbox img {
+    float: left;
+    width: 50%;
+    object-fit: cover;
+    padding-top: 75px;
+}
