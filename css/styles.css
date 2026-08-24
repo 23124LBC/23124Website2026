@@ -182,9 +182,8 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
 
 .contactbox .textbox {
     float: left;
-    width: 40%;
+    width: 50%;
     padding-top: 75px;
-    margin-left: 5%;
 }
 
 .contactbox img {
@@ -192,4 +191,12 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
     width: 50%;
     object-fit: cover;
     padding-top: 75px;
+}
+
+.mapembed {
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+    background-color: red;
+    margin-top: 1500px;
 }
