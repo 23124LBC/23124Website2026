@@ -194,9 +194,49 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
 }
 
 .mapembed {
-    width: 80%;
-    margin-left: 10%;
-    height: 400px;
+    margin-left:20%;
     background-color: red;
     margin-top: 1500px;
+}
+
+/* contact form code taken from w3schools (https://www.w3schools.com/howto/howto_css_contact_form.asp) */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #527cc6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type=submit]:hover {
+  background-color: #0b2545;
+  box-shadow: 3px 3px 5px #0d1824;
+  transition: 0.3s;
+}
+
+.contactform {
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.contactform label, input, textarea {
+    font-family: 'Futura';
+    color: #0d1824;
+    font-size: 16px;
 }
