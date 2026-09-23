@@ -167,6 +167,11 @@ https://www.geeksforgeeks.org/css/how-to-create-an-image-gallery-with-a-horizont
     padding-top: 75px;
 }
 
+.aboutbox .textbox p{
+    width: 95%;
+    float: left; 
+}
+
 .aboutbox img {
     float: left;
     width: 50%;
@@ -234,4 +239,9 @@ input[type=submit]:hover {
     font-family: 'Futura';
     color: #0d1824;
     font-size: 16px;
+}
+
+.storecontentsbox {
+    width: 65vw;
+    margin-left: 17.5vw;
 }
