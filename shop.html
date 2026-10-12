@@ -35,7 +35,98 @@
         <p>Products</p>
     </div>
 
+    <div class="shop-search">
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search products..."
+            aria-label="Search products"
+        >
+    </div>
+
     <div class="storecontentsbox">
         
+        <div class="storeitem" data-name="apple bottle 1">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Apple Bottle 1 - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="apple bottle 1">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Apple Bottle 1 - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="apple bottle 2">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Apple Bottle 2 - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="banana bottle 1">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Banana Bottle 1 - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="banana bottle 2">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Banana Bottle 2 - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="large bottle">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Large Bottle - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name=" extra large bottle">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Extra Large Bottle - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="test">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Test - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="test">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Test - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="test">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Test - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="test">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Test - $1.99</p>
+        </div>
+
+        <div class="storeitem" data-name="test">
+            <div class="itembox"><img src="assets/images/WaterBottle.jpg"></div>
+            <p>Test - $1.99</p>
+        </div>
+         
     </div>
+
+    <script>
+        const searchInput = document.getElementById('productSearch');
+        const products = document.querySelectorAll(
+            '.storecontentsbox .storeitem'
+        );
+
+        searchInput.addEventListener('input', function () {
+            const searchTerm = this.value.trim().toLowerCase();
+
+            products.forEach(function (product) {
+                const productName = product.dataset.name.toLowerCase();
+
+                if (productName.includes(searchTerm)) {
+                    product.style.display = '';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
 </body>
