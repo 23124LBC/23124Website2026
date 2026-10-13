@@ -241,11 +241,6 @@ input[type=submit]:hover {
     font-size: 16px;
 }
 
-.storecontentsbox {
-    width: 65vw;
-    margin-left: 17.5vw;
-}
-
 .itembox {
     width:200px;
     background-color: white;
@@ -257,18 +252,14 @@ input[type=submit]:hover {
 
 .itembox:hover {
     background-color: #0b2545;
-    box-shadow: 3px 3px 5px #0d1824;
+    box-shadow: 6px 6px 8px #0d1824;
 }
 
-.itembox img {
-    height:200px;
-}
-/* Main shop container */
 .storecontentsbox {
     width: 80%;
     max-width: 1200px;
     margin: 110px auto 60px;
-
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 28px;
@@ -277,24 +268,26 @@ input[type=submit]:hover {
     box-sizing: border-box;
 }
 
-/* Individual product */
+
 .storecontentsbox > .storeitem {
     width: 100%;
     min-width: 0;
 }
 
-/* Product image container */
+
 .storecontentsbox .itembox {
     width: 100%;
     height: 200px;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     box-sizing: border-box;
+    outline: 3px solid #0b2545;
+    border-radius: 8px;
 }
 
-/* Product image */
+
 .storecontentsbox .itembox img {
     display: block;
     max-width: 100%;
@@ -304,7 +297,7 @@ input[type=submit]:hover {
     object-fit: contain;
 }
 
-/* Product price */
+
 .storecontentsbox .storeitem p {
     margin: 6px 0 0 0;
     text-align: left;
@@ -323,12 +316,10 @@ input[type=submit]:hover {
     border: 2px solid #527cc6;
     border-radius: 8px;
     box-sizing: border-box;
-
     font-family: 'Futura';
     font-size: 18px;
     color: #0d1824;
     background-color: #f8ffe8;
-
     outline: none;
     transition: 0.3s;
 }
@@ -336,9 +327,4 @@ input[type=submit]:hover {
 #productSearch:focus {
     border-color: #0b2545;
     box-shadow: 0 0 6px #527cc6;
-}
-
-/* Avoid an oversized gap between the search bar and products */
-.storecontentsbox {
-    margin-top: 60px;
 }
