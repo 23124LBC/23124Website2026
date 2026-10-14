@@ -306,7 +306,7 @@ input[type=submit]:hover {
 
 .shop-search {
     width: 80%;
-    max-width: 500px;
+    max-width: 800px;
     margin: 100px auto 0;
 }
 
@@ -322,6 +322,7 @@ input[type=submit]:hover {
     background-color: #f8ffe8;
     outline: none;
     transition: 0.3s;
+    border-radius:25px;
 }
 
 #productSearch:focus {
